@@ -48,12 +48,12 @@ img {
 }
 .mid-box {
     position: relative;
-    padding: 6rem 0 3rem 0;
+    padding: 4rem 0 3rem 0;
     border-bottom: 1px solid var(--dark-gray);
 }
 .mid-box div:nth-of-type(1) {
     border: 0.5rem solid white;
-    width: 10rem;
+    width: 7rem;
     height: fit-content;
     display: flex;
     border-radius: 50%;
@@ -70,14 +70,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    margin-bottom: -1.5rem;
 }
-.mid-box div:nth-of-type(2) p:first-of-type {
+.mid-box div:nth-of-type(2) h1 {
     font-weight: 700;
     margin-right: 1rem;
     font-size: 1.75rem;
     color: var(--very-dark-desaturated-blue);
 }
-.mid-box div:nth-of-type(2) p:last-of-type {
+.mid-box div:nth-of-type(2) p {
     font-size: 1.75rem;
     font-weight: 400;
     color: var(--dark-grayish-blue);
