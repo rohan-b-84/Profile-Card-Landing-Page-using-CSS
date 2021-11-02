@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue:hsl(227,  10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    background-image: url('./images/bg-pattern-top.svg'), url("./images/bg-pattern-bottom.svg");  
+    background-position: -350px -500px, 650px 350px;
+    background-repeat: no-repeat;
+    background-color: var(--dark-cyan);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-box {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.mid-box {
+    position: relative;
+    padding: 6rem 0 3rem 0;
+    border-bottom: 1px solid var(--dark-gray);
+}
+.mid-box div:nth-of-type(1) {
+    border: 0.5rem solid white;
+    width: 10rem;
+    height: fit-content;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-box div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.mid-box div:nth-of-type(2) p:first-of-type {
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    color: var(--very-dark-desaturated-blue);
+}
+.mid-box div:nth-of-type(2) p:last-of-type {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+.mid-box div:nth-of-type(3) {
+    font-size: 1.45rem;
+    color: var(--dark-gray);
+    margin: -1rem;
+    font-weight: 700;
+}
+.bottom-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+}
+.bottom-box div {
+    margin: 0 1rem;
+}
+.bottom-box div p {
+    padding: 0;
+    margin: 0;
+}
+.bottom-box div p:first-of-type {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+.bottom-box div p:last-of-type {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 700;
+}
